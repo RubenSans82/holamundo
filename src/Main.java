@@ -7,6 +7,23 @@ import com.formacom.Numeros;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        int menuSeleccionado;
+        String menu = """
+            Menú:
+            1. Ingresar números
+            2. Salir
+                """;
+
+        do{
+            System.out.println(menu);
+            menuSeleccionado = scanner.nextInt();
+
+
+
+
+
+
+
         List<Integer> listaNumeros = new ArrayList<>();
         
         System.out.println("Ingrese 5 números:");
@@ -31,6 +48,7 @@ public class Main {
         System.out.println("Los números pares son: " + numeros.pares());
         System.out.println("Los números impares son: " + numeros.impares());
         
-        scanner.close();
+
+        }while(menuSeleccionado!=2);
     }
 }
